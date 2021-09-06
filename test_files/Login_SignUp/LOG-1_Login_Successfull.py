@@ -1,10 +1,7 @@
-# Because of unresponsive website that occur on 06-09-2021, this test currently just a UI testing. Real response from server cannot be obtained
-
 # Verify the login of user
 # Enter valid Username and valid Password
 
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 from time import sleep
 from variables import *
 
@@ -15,9 +12,9 @@ driver = webdriver.Firefox(executable_path= EXECUTABLE_PATH)
 driver.implicitly_wait(5)
 driver.get(LOGIN_PAGE)
 
-email_field = driver.find_element_by_name("username")
+email_field = driver.find_element_by_name("email")
 pwd_field = driver.find_element_by_name("password")
-login_btn = driver.find_element_by_class_name("btn.btn-primary.btn-lg.btn-block.loginbtn")
+login_btn = driver.find_element_by_class_name("btn.btn-default.btn-lg.btn-block.effect.ladda-button.waves-effect")
 
 email_field.send_keys(username)
 pwd_field.send_keys(password)

@@ -1,2 +1,7 @@
-LOGIN_PAGE = "https://web.archive.org/web/20210124214444/https://www.phptravels.net/login"
+LOGIN_PAGE = "https://www.phptravels.net/login"
 EXECUTABLE_PATH = r"../../driver/geckodriver.exe"
+CORRECT_LOGIN_BTN = "Login"
+CORRECT_SIGNUP_BTN = "Signup"
+CORRECT_EMAIL_TEXT = "Email"
+CORRECT_PWD_TEXT = "Password"
+CORRECT_RESET_TEXT = "Reset Password"
