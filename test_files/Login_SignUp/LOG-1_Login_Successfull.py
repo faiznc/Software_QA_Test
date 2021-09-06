@@ -24,4 +24,4 @@ sleep(5)
 title = driver.title
 
 driver.quit()
-assert "Dashboard" in title, "Registered User failed to login."  # For now, unable to check
+assert "Dashboard" in title, "Registered User failed to login."
